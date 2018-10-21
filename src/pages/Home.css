@@ -1,0 +1,80 @@
+.home-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.social-buttons {
+  display: flex;
+  font-size: 1.5em;
+  margin-bottom: 1.5rem;
+}
+
+.linkedin-button {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: #0077b5;
+}
+
+.github-button {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: black;
+}
+
+.facebook-button {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: #3b5998;
+}
+
+.email-button {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: #c71610;
+}
+
+.demo-button-container {
+  margin: 1.5rem;
+}
+
+.demo-button {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid black;
+  color: black;
+}
+
+.demo-button-link {
+  text-decoration: none;
+}
+
+.hr {
+  background: lightgray;
+  width: 75vw;
+  height: 2px;
+  border: none;
+}
+
+.footer {
+  font-size: 0.9rem;
+}
+
+.react-spinner {
+  animation: React-spin infinite 10s linear;
+}
+
+@keyframes React-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
