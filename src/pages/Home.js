@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router-dom';
 import posed from 'react-pose';
 
 import ProfilePic from '../images/ProfilePic.jpg';
@@ -73,7 +72,7 @@ class Home extends Component {
             <AnimationContainer pose={this.state.isVisible ? 'visible' : 'hidden'}>
             <div className="home-container">
                 <div>
-                    <img className="profile-pic" src={ProfilePic} onLoad={this.handleImageLoaded.bind(this)} />
+                    <img className="profile-pic" src={ProfilePic} onLoad={this.handleImageLoaded.bind(this)} alt="headshot" />
                 </div>
                 <div>
                     <h1>Sam Salvail</h1>
@@ -82,7 +81,7 @@ class Home extends Component {
                     <h2>Front End Engineer</h2>
                 </div>
                 <div className="social-buttons">
-                    <a href="https://www.linkedin.com/in/ssalvail/" target="_blank" className="linkedin-button">
+                    <a href="https://www.linkedin.com/in/ssalvail/" target="_blank" rel="noopener noreferrer" className="linkedin-button">
                     <LinkedinButton
                         pose={this.state.hoveringLinkedin ? "hovered" : "idle"}
                         onMouseEnter={() => this.setState({ hoveringLinkedin: true })}
@@ -90,7 +89,7 @@ class Home extends Component {
                         <i className="fab fa-linkedin-in"></i>
                     </LinkedinButton>
                     </a>
-                    <a href="https://github.com/ssalvail/" target="_blank" className="github-button">
+                    <a href="https://github.com/ssalvail/" target="_blank" rel="noopener noreferrer" className="github-button">
                     <GithubButton
                         pose={this.state.hoveringGithub ? "hovered" : "idle"}
                         onMouseEnter={() => this.setState({ hoveringGithub: true })}
@@ -98,7 +97,7 @@ class Home extends Component {
                         <i className="fab fa-github"></i>
                     </GithubButton>
                     </a>
-                    <a href="https://www.facebook.com/SamSalvail/" target="_blank" className="facebook-button">
+                    <a href="https://www.facebook.com/SamSalvail/" target="_blank" rel="noopener noreferrer" className="facebook-button">
                     <FacebookButton
                         pose={this.state.hoveringFacebook ? "hovered" : "idle"}
                         onMouseEnter={() => this.setState({ hoveringFacebook: true })}
@@ -106,7 +105,7 @@ class Home extends Component {
                         <i className="fab fa-facebook"></i>
                     </FacebookButton>
                     </a>
-                    <a href="mailto:ssalvail39@gmail.com" target="_blank" className="email-button">
+                    <a href="mailto:ssalvail39@gmail.com" target="_blank" rel="noopener noreferrer" className="email-button">
                     <EmailButton
                         pose={this.state.hoveringEmail ? "hovered" : "idle"}
                         onMouseEnter={() => this.setState({ hoveringEmail: true })}
@@ -119,7 +118,7 @@ class Home extends Component {
                 <div>
                     <h3 className="header-center">Companies I Have Worked For</h3>
                     <div className="companies">
-                        <a href="https://gretta.com/" target="_blank" className="no-decoration">
+                        <a href="https://gretta.com/" target="_blank" rel="noopener noreferrer" className="no-decoration">
                             <GrettaButton className="gretta"
                                 pose={this.state.hoveringGretta ? "hovered" : "idle"}
                                 onMouseEnter={() => this.setState({ hoveringGretta: true })}
@@ -128,7 +127,7 @@ class Home extends Component {
                                 <div>gretta</div>
                             </GrettaButton>
                         </a>
-                        <a href="https://www.zengot.com/" target="_blank" className="no-decoration">
+                        <a href="https://www.zengot.com/" target="_blank" rel="noopener noreferrer" className="no-decoration">
                             <ZengotButton className="zengot"
                                 pose={this.state.hoveringZengot ? "hovered" : "idle"}
                                 onMouseEnter={() => this.setState({ hoveringZengot: true })}
@@ -145,22 +144,22 @@ class Home extends Component {
                         <div className="project-items">
                             <h4>HoloJam - March 2016</h4>
                             <ul>
-                                <li>Created a proof of concept demo for the <a href="https://hplustech.com/" target="_blank">Holus</a></li>
+                                <li>Created a proof of concept demo for the <a href="https://hplustech.com/" target="_blank" rel="noopener noreferrer">Holus</a></li>
                                 <li>Tied for first place prize</li>
-                                <li><a href="https://vimeo.com/170048050" target="_blank">HoloJam video</a></li>
+                                <li><a href="https://vimeo.com/170048050" target="_blank" rel="noopener noreferrer">HoloJam video</a></li>
                             </ul>
                         </div>
                         <div className="project-items">
                             <h4>NWHacks - February 2016</h4>
                             <ul>
-                                <li>Created a <a href="http://devpost.com/software/liveinlife-jz1rfv" target="_blank">web and mobile app</a> with a team of five in 24 hours</li>
+                                <li>Created a <a href="http://devpost.com/software/liveinlife-jz1rfv" target="_blank" rel="noopener noreferrer">web and mobile app</a> with a team of five in 24 hours</li>
                                 <li>Placed in the top six teams out of over 90 submissions</li>
                             </ul>
                         </div>
                         <div className="project-items">
                             <h4>Global Game Jam 2016 - January 2016</h4>
                             <ul>
-                                <li>Created a <a href="http://globalgamejam.org/2016/games/blood-moon-0" target="_blank">2D platformer</a> with a team of three in 48 hours</li>
+                                <li>Created a <a href="http://globalgamejam.org/2016/games/blood-moon-0" target="_blank" rel="noopener noreferrer">2D platformer</a> with a team of three in 48 hours</li>
                             </ul>
                         </div>
                     </div>
