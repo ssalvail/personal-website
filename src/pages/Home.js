@@ -78,7 +78,7 @@ class Home extends Component {
                     <h1>Sam Salvail</h1>
                 </div>
                 <div>
-                    <h2>Front End Engineer</h2>
+                    <h2>Web Developer</h2>
                 </div>
                 <div className="social-buttons">
                     <a href="https://www.linkedin.com/in/ssalvail/" target="_blank" rel="noopener noreferrer" className="linkedin-button">
