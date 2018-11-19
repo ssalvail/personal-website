@@ -142,6 +142,14 @@ class Home extends Component {
                     <h3 className="header-center">Projects and Events</h3>
                     <div className="projects">
                         <div className="project-items">
+                            <h4><a href="https://zen-einstein-79908b.netlify.com" target="_blank" rel="noopener noreferrer">What To Eat</a> (Personal Project) - November 2018</h4>
+                            <ul>
+                                <li>Created a front end website using React - <a href="https://github.com/ssalvail/WhatToEat-Web" target="_blank" rel="noopener noreferrer">View on GitHub</a></li>
+                                <li>Connects to a back end Node.js Express API hosted on Heroku - <a href="https://github.com/ssalvail/WhatToEat-API" target="_blank" rel="noopener noreferrer">View on GitHub</a></li>
+                                <li>The goal of this project was to improve on my back end development knowledge and experience</li>
+                            </ul>
+                        </div>
+                        <div className="project-items">
                             <h4>HoloJam - March 2016</h4>
                             <ul>
                                 <li>Created a proof of concept demo for the <a href="https://hplustech.com/" target="_blank" rel="noopener noreferrer">Holus</a></li>
